@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BeerTableComponent } from './beer-table/beer-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BeerTableComponent
   ],
   imports: [
     BrowserModule,
