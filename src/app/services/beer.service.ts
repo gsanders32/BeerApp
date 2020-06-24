@@ -6,10 +6,11 @@ import { ApiService } from './api.service';
 })
 export class BeerService {
 
-  constructor(private httpService: ApiService) { }
+  constructor(private apiService: ApiService) { }
 
   async getAll(count: number){
-    const data = await this.httpService.get('beers', count);
+    const data = await this.apiService.get('beers', count);
     return data;
   }
+  
 }
